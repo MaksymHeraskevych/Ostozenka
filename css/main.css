@@ -1,0 +1,394 @@
+
+@font-face{
+	font-family: 'Philosopher', sans-serif;
+}
+
+ @font-face{
+
+	font-family: 'Manrope';
+
+	src: url('../fonts/manrope/regular.otf');
+
+	src: url('../fonts/manrope/regular.otf?iefix') format('otf'),
+
+	url('../fonts/manrope/regular.ttf') format('truetype'),
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+
+ @font-face{
+
+	font-family: 'Manrope';
+
+	src: url('../fonts/manrope/light.otf');
+
+	src: url('../fonts/manrope/light.otf?iefix') format('otf'),
+
+	url('../fonts/manrope/light.woff') format('woff'),
+
+	font-weight: 300;
+
+	font-style: normal;
+
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.1em;
+	color: #fff;
+	background: #222129;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.flex{
+	display: flex;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	margin: 0 2%;
+}
+
+
+p{
+	padding: 0;
+	margin: 0;
+	color: #D1D1D1;
+	font-family: 'Manrope', sans-serif;
+	line-height: 28px;
+	font-size: 14px;
+	font-weight: normal;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.main{
+	background: url(../img/mainScreen/bg.png) no-repeat center top / cover;
+	height: 931px;
+	 box-shadow: 0px -38px 90px 15px  #222129 inset;
+}
+
+.header{
+	padding-top: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__menu{
+	width: 35px;
+	cursor: pointer;
+}
+
+.header__menu span {
+    background: #fff;
+    display: block;
+    height: 2px;
+    margin-bottom: 8px;
+    width: 100%;
+    float: right;
+}
+
+.header__menu span:nth-child(2) {
+    width: 24px;
+}
+
+.header__menu span:nth-child(3) {
+    width: 15px;
+}
+
+.header__menu:hover span {
+    float: left;
+}
+
+.main-title{
+	padding-top: 218px;
+}
+
+.title__motto{
+	text-transform: uppercase;
+	padding-top: 25px;
+	font-family: 'Manrope', sans-serif;
+
+}
+
+.main-title__title{
+	padding-top: 55px;
+	
+	font-size: 54px;
+	padding-bottom: 65px;
+}
+
+.title__description {
+	max-width: 654px;
+	margin: auto;
+	padding-bottom: 90px;
+}
+
+.advantages{
+	justify-content: center;
+	align-items: center;
+}
+
+.advantages__block{
+	width: 198px;	
+	margin-right: 31px;
+}
+
+.advantages-block__desciption{
+	padding-top: 12px;
+	font-family: 'Manrope', sans-serif;
+	font-size: 13px;
+}
+
+/*More screen 2*/
+
+.more{
+	padding-top: 306px;
+}
+
+.name-section{ 
+	margin: 0 2%;
+	align-items: center;
+	color: #D1D1D1;
+	font-family: 'Manrope', sans-serif;
+}
+
+.name-section__line{
+	margin-left: 18px;
+	margin-right: 20px;
+	height: 1px;
+	width: 65px;
+	background: #C4C4C4;
+}
+
+.ellipse-small{
+	left: 50%;
+	margin-left: -214px;
+	position: absolute;
+	margin-top: 110px;
+}
+
+.ellipse-big{
+	position: absolute;
+	left: 50%;
+	margin-left: -327px;
+}
+
+.more__title{
+	margin-top: 274px;
+}
+	
+.more-title__title{
+	font-size: 45px;
+	width: 254px;
+   	position: absolute;
+   	margin-top: -160px;
+    left: 50%;
+    margin-left: -450px;
+}
+
+.more-title__info p{
+	width: 368px;
+	padding-bottom: 41px;
+	font-weight: 300;
+}
+
+.right{
+	margin-left: 146px;
+}
+
+.right__white{
+	color: #fff;
+}
+
+.more-title__info{
+	justify-content: center;
+}
+
+/*Screen 3 architecture*/
+
+.name-section__architecture{
+	padding-top: 154px;
+	padding-bottom: 107px;
+}
+
+.line{
+	background: #D1D1D1;
+	opacity: 0.1;
+	height: 1px;
+    width: 80%;
+    position: absolute;
+    margin-top: 51px;
+}
+
+.architecture__back{
+	width: 427px;
+	height: 427px;
+	margin-top: 380px;
+	margin-left: 44px;
+	background: #FFDFA8;
+}
+
+.architecture__img{
+	position: absolute;
+	right: 56px;
+}
+
+.architecture__title{
+	margin-top: 115px;
+	margin-left: 61px;
+	position: absolute;
+	width: 758px;
+	height: 677px;
+	background: #222129;
+	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.36);
+}
+
+.architecture-title__title{
+	padding: 70px 0px 0px 85px;
+	font-size: 45px;
+	width: 260px;
+}
+
+.architecture-title__description{
+	padding: 71px 0px 0px 85px;
+	width: 594px;
+}
+
+.architecture-title__description-p{
+	margin-top:20px;
+}
+
+.line__two{
+	margin-top: 118px;
+}
+
+/*Gallery Screen 4*/
+
+.name-section__gallery{
+	margin-top: 400px;
+}
+
+.gallery__title{
+	justify-content: center;
+	margin-top: 120px;
+}
+
+.gallery-title__title{
+	font-size: 45px;
+	width: 320px;
+}
+
+.gallery-title__description{
+	margin-left: 76px;
+	width: 523px;
+	margin-bottom: 60px;
+}
+
+/*Slider */
+
+
+
+.slider-img{
+	padding-top: 50px;
+}
+
+.img{
+	position: absolute;
+	display: none;
+	margin-left: 20%;
+}
+
+.img.house{
+	display: block;
+}
+
+.img:first-child{
+	width: 60%;
+}
+
+.img:nth-child(2){
+	width: 60%;
+}
+
+.img:nth-child(3){
+	width: 60%;
+}
+
+.img:nth-child(4){
+	width: 60%;
+}
+
+.img:nth-child(5){
+	width: 60%;
+}
+
+.img:nth-child(6){
+	width: 60%;
+}
+
+.img:nth-child(7){
+	width: 60%;
+}
+
+.n{
+	margin: 0 2%;
+}
+
+.n a{ 
+	color: #D1D1D1;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.n a:hover{
+	color: #777;
+}
+
+.gallery__line{
+	margin-top: 16px;
+	width: 100%;
+}
+
+.slider-switches{
+	padding-top: 18%;
+	justify-content: space-between;
+}
+
+.position-slider{
+	margin-top: 23%;
+	justify-content: center;
+}
+
+.position-slider__item{
+	list-style: none;
+	margin-right: 10px;
+}
+
+.position-slider__item a{
+	font-family: Manrope;
+	color: #D1D1D1;
+}
+
+.position-slider__item a:hover{
+	color: #777;
+}
+
+/*Offers screen 4*/
+.name-section__offers{
+	margin-top: 200px;	
+}
+
+.background-line{
+	width: 100%;
+}
