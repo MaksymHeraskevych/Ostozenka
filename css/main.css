@@ -52,11 +52,6 @@ body{
 	text-align: center;
 }
 
-.container{
-	margin: 0 2%;
-}
-
-
 p{
 	padding: 0;
 	margin: 0;
@@ -69,12 +64,117 @@ p{
 }
 
 a{
+	cursor: pointer;
 	text-decoration: none;
 }
 
+.container{
+	margin: 0 2%;
+}
+
+/*POPUP*/
+
+.overlay_popup {
+	display:none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.popup {
+	display: none;
+	z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+.bq-menu{
+	width: 100%;
+}
+
+.header-popup{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+.logo__img{
+	max-width: 230px;
+}
+
+.close{
+	width: 21px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.close:hover{
+	color: #e1def5;
+}
+
+.close span{
+	height: 2.06px;
+	display: block;
+	margin-top: -2px;
+	background: #fff;
+	border-radius: 5px;
+	transform: matrix(0.7, 0.7, 0.7, -0.7, 0, 0);
+}
+
+.close span:last-child{
+	transform: matrix(0.7, -0.7, -0.7, -0.7, 0, 0);
+}
+
+/*Menu Popup*/
+
+.navbar{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;	
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 136px;
+}
+
+.navbar a{
+	font-family: Philosopher, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 45px;
+	color: #FFF;
+	display: block;
+}
+
+.navbar a:hover{
+	color: #e1def5;
+}
+
+.navbar span{
+	display: block;	
+	font-family: Manrope;
+	line-height: 28px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	color: #D1D1D1;
+}
+
+/*THE END*/
+
+
+
 .main{
 	background: url(../img/mainScreen/bg.png) no-repeat center top / cover;
-	height: 931px;
 	 box-shadow: 0px -38px 90px 15px  #222129 inset;
 }
 
@@ -111,7 +211,8 @@ a{
 }
 
 .main-title{
-	padding-top: 218px;
+	margin: 0 2%;
+	padding-top: 100px;
 }
 
 .title__motto{
@@ -122,10 +223,9 @@ a{
 }
 
 .main-title__title{
-	padding-top: 55px;
-	
+	padding-top: 40px;
 	font-size: 54px;
-	padding-bottom: 65px;
+	padding-bottom: 45px;
 }
 
 .title__description {
@@ -153,11 +253,10 @@ a{
 /*More screen 2*/
 
 .more{
-	padding-top: 306px;
+	padding-top: 110px;
 }
 
 .name-section{ 
-	margin: 0 2%;
 	align-items: center;
 	color: #D1D1D1;
 	font-family: 'Manrope', sans-serif;
@@ -198,7 +297,7 @@ a{
 }
 
 .more-title__info p{
-	width: 368px;
+	max-width: 368px;
 	padding-bottom: 41px;
 	font-weight: 300;
 }
@@ -218,6 +317,7 @@ a{
 /*Screen 3 architecture*/
 
 .name-section__architecture{
+	margin: 0 2%;
 	padding-top: 154px;
 	padding-bottom: 107px;
 }
@@ -242,16 +342,16 @@ a{
 .architecture__img{
 	position: absolute;
 	right: 56px;
+	width: 45%;
 }
 
 .architecture__title{
 	margin-top: 115px;
 	margin-left: 61px;
 	position: absolute;
-	width: 758px;
-	height: 677px;
 	background: #222129;
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.36);
+	max-width: 50%;
 }
 
 .architecture-title__title{
@@ -261,8 +361,8 @@ a{
 }
 
 .architecture-title__description{
-	padding: 71px 0px 0px 85px;
-	width: 594px;
+	padding: 70px 30px 70px 85px;
+	max-width: 594px;
 }
 
 .architecture-title__description-p{
@@ -276,6 +376,7 @@ a{
 /*Gallery Screen 4*/
 
 .name-section__gallery{
+	margin: 0 2%;
 	margin-top: 400px;
 }
 
@@ -296,8 +397,6 @@ a{
 }
 
 /*Slider */
-
-
 
 .slider-img{
 	padding-top: 50px;
@@ -387,6 +486,7 @@ a{
 /*Offers screen 4*/
 .name-section__offers{
 	margin-top: 200px;	
+	margin: 0 2%;
 }
 
 .background-line{

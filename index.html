@@ -2,21 +2,70 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ostozenka11</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Philosopher:700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+	
 	<section class="main ">
+
+		<!-- POPUP -->
+
+		<div class="overlay_popup">
+			<img class="bq-menu" src="menu/img/bq.jpg" alt="">	
+		</div>
+
+
+		<div class="popup" id="popup1">
+			<div class="container">
+
+				<div class="header-popup">
+							
+						<div class="logo header-popup__logo">
+							<img src="menu/img/logo.png" alt="logo" class="logo__img">
+						</div>
+
+						<div class="close">
+							<span></span>
+							<span></span>
+						</div>
+								
+				</div>
+				<div class="menu">
+					<nav class="nav">
+						<ul class="navbar ">
+							<li><a href="#">О проекте <span>О жилом комплексе</span></a></li>
+							<li><a href="#">Архитектура <span>Описания архитектурного стиля</span></a></li>
+							<li><a href="#">Галерея <span>Фото отделки и фасада</span></a></li>
+							<li><a href="#">Квартиры <span>Предложения о продаже</span></a></li>
+						</ul>
+						<ul class="navbar ">
+							<li><a href="#">Презентация<span>Видео и pdf презентация</span></a></li>
+							<li><a href="#">Заявка<span>Консультация от нашего менеджера</span></a></li>
+							<li><a href="#">Ипотека<span>Доступная ипотека от партнеров</span></a></li>
+							<li><a href="#">Контакты<span>Обратная связь</span></a></li>
+						</ul>
+					</nav>
+				</div>				
+							
+			</div>
+		</div>
+
+<!-- 	THE END -->
+
 		<div class="header flex container">
 			<img class="header__logo" src="img/mainScreen/logo.png" alt="logo">
-			<div class="header__menu">
+			<div class="header__menu  window__menu" rel="popup1">
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
 		</div>	
+
 		<div class="main-title center">
 			<img class="title__img" src="img/mainScreen/title.png" alt="">
 			<div class="title__motto">
